@@ -1,14 +1,14 @@
 import './App.css'
 import Counter from './Counter'
-import { Provider } from 'react-redux'
-import {myCountstore} from './Redux/Store'
+// import { Provider } from 'react-redux'
+// import {myCountstore} from './Redux/Store'
 
 function App() {
   return (
     <>
-    <Provider store ={myCountstore}>
+    {/* <Provider store ={myCountstore}> */}
       <Counter />   
-    </Provider>
+    {/* </Provider> */}
     </>
   )
 }

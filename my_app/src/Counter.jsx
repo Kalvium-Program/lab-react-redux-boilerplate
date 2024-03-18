@@ -4,7 +4,7 @@ import React from 'react';
 import './App.css';
 
 const Counter = () => {
-    const dispatch = useDispatch(); // Corrected typo in variable name
+    // const dispatch = useDispatch(); // Corrected typo in variable name
     // const count = useSelector(Selector);
 
     // function handleInc() {

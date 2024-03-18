@@ -1,6 +1,6 @@
 import React from 'react';
-import { Increment, Decrement, Selector } from './Redux/Reducer'; // Import Increment, Decrement directly
-import { useDispatch, useSelector } from 'react-redux';
+// import { Increment, Decrement, Selector } from './Redux/Reducer'; // Import Increment, Decrement directly
+// import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
 
 const Counter = () => {

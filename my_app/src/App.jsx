@@ -1,16 +1,17 @@
-import './App.css'
-import Counter from './Counter'
-// import { Provider } from 'react-redux'
-// import {myCountstore} from './Redux/Store'
+import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { listSel, listAction } from './Redux/Reducer'
 
 function App() {
-  return (
-    <>
-    {/* <Provider store ={myCountstore}> */}
-      <Counter />   
-    {/* </Provider> */}
-    </>
-  )
-}
-
-export default App
+  const Dispatch = useDispatch();
+  const NumCount = useSelector(listSel)
+    return (
+      <>
+        <h1>{NumCount}</h1>
+        <button onClick={() => Dispatch(listAction.inc())}>Like</button>
+        <button onClick={() => Dispatch(listAction.dec())}>Unlike</button>
+      </>
+    )
+  }
+  
+  export default App
